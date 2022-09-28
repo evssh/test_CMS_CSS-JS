@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.container {
+    max-height: 168px;
+    margin-top: 64px;
+    margin-left: 75px;
+}
+
+.info__title {
+    max-width: 249px;
+    max-height: 38px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+    /* text/main */
+    color: #70747A;
+}
+
+.all-managers {
+    height: 110px;
+    margin-top: 20px;
+    position: inherit;
+    margin-left: 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.all-managers-item {
+    display: flex;
+    margin: 0px 10px 10px 0px;
+    height: 30px;
+    padding: 0px 0px 0px 15px;
+
+    /* color/accent */
+
+    background: #537BDE;
+    border-radius: 5px;
+
+    /* body */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+
+    text-align: center;
+
+    /* color/white */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.all-managers-item:nth-child(odd) > img:nth-child(1){
+    display: none;
+}
+
+.all-managers-item:nth-child(odd) > img:nth-child(2){
+    padding: 0px 16.25px 0px 0px;
+}
+
+.all-managers-item:nth-child(even) {
+    background: #F6F6F6;
+    color: #70747A;
+}
+
+.all-managers-item:nth-child(even) > img:nth-child(2){
+    display: none;
+}
+
+.all-managers-item:nth-child(even) > img:nth-child(1){
+    padding: 0px 13.45px 0px 0px;
+}
